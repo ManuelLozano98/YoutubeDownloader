@@ -3,5 +3,13 @@
     "description": "Descargar videos de YouTube gratis.",
     "version": "0.1",
     "author": "Manuel Lozano",
-    "manifest_version": 2
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/watch*"],
+            "js": ["src/main.js"]
+        }
+
+
+    ]
 }
